@@ -60,7 +60,7 @@
 // console.log(++incr);
 // console.log(--decr);
 
- console.log(2 + 2 * 2 !== '6');
+//  console.log(2 + 2 * 2 !== '6');
 // console.log(3 + 3 === 6);
 
 // const isChecked = false,
@@ -69,3 +69,6 @@
 // console.log(isChecked && isClose); && - или
 // console.log(isChecked || isClose); // || - и
 // console.log(isClose || !isChecked); // ! - отрицание
+
+
+ 
