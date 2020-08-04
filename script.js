@@ -1,3 +1,33 @@
+// перер
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  var number = 3.7;
 // var myNumber = 3;
 //  console.log(myNumber);
@@ -63,7 +93,7 @@
 //  	console.log("Number litle");
 //  }
 
-// // ЦИКЛЫ
+// ЦИКЛЫ
 //  for (var i = 0; i < 10; i ++) { // код будет выполнятся до того времени, пока не будет ложь.
 //  	if (i == 5) {
 //  		continue; // остонавливает нумерацию break
@@ -77,7 +107,8 @@
 //  while ( i < 10) {
 
 //  	console.log(i);
-//  	i++;
+ 	
+	
 //  }
 
 // // ФУНКЦИИ
@@ -119,4 +150,8 @@
 // 	{
 // 		let result = 10
 // 	// console.log(result);
-	
+// const cars = ['fsdfsd', 'fsfsfgsgg', 'gsggs', 'sgsg']
+// for (let i = 0; i < cars.length; i++) {
+// 	const car = cars[i]
+// 	console.log(car)
+// }
