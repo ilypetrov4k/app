@@ -1,74 +1,75 @@
-// "use strict"; 
-// let number = 4.6;
+ 'use strict';
 
-// console.log(-4/0);
-// console.log("string" * 9);
-// let string = "Alex 4";
+// let num = 40;
 
-// const bool = false;
+// function showFirstMessage(text) {
+//     console.log(text);
+//     num = 10;
+//     console.log(num);
 
-// let facts ;
-// console.log(facts);
+// }
 
-// const object = {
-//     name: "Alex",
-//     age: 21,
-//     isMarried: false
+// showFirstMessage("Hello world");
+// console.log(num);
+
+// function calc (a, b) {
+//     return (a + b);
+// }
+
+// console.log(calc(12, 13));
+// console.log(calc(2, 4));
+// console.log(calc(45, 6));
+// console.log(calc(323, 65));
+// console.log(calc(43, 44));
+// console.log(calc(3, 33));
+// console.log(calc(342, 342));
+// console.log(calc(786, 575));
+// console.log(calc(3423, 353));
+// console.log(calc(24, 64));
+// console.log(calc(32, 424));
+// console.log(calc(42, 22));
+// console.log(calc(567, 22));
+// console.log(calc(8798, 58098));
+// console.log(calc(67, 876));
+
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
+// const anotherNum = ret();
+
+// console.log (anotherNum);
+
+// const logger = function () {
+//     console.log('Hello');
 // };
+// logger();
 
-// //console.log(object)
-// let arr = ["plum.png" , 'orange.jpg', 6, 'apple.bmp', {}, []];
-// console.log(arr[2]);
-// alert('hello');
-
-//const result = confirm("You Hear Me?"); // confirm Вопрос для пользователя
-//console.log(result); 
-
-// const answer = prompt("Вам есть 28?", "18"); // prompt чтоб пользователь написал
-// console.log(typeof(answer)); // вся инфа от ползователя в формате строки.
-
-// const anwers = [];
-
-// anwers[0] = prompt("Name", '');
-// anwers[1] = prompt("surName", '');
-// anwers[2] = prompt("age", '');
-
-// console.log(typeof(anwers));
-
-// console.log(typeof(null)); // typeof опредиление формата.
+// const calc = (a, b) => { return a + b };
 
 
-// const category = 'toys';
+// const str = 'тест';
 
-// console.log(`https://someurl.com/${category}/5`);
+// console.log(str[2]);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
 
-// const user = "Ivan";
+// const fruit = "Some fruit";
+// console.log(fruit.indexOf('fruit'));
 
-// alert(`Hello, ${user}`);
+// const logg = "Hello world!";
 
-"use strict";
+// console.log(logg.slice(6, 12));
 
-// console.log('arr ' + " - object");
-// console.log(4 + + "5");
+// console.log(logg.substring(6, 11));
 
-//let incr = 10,
-   // decr = 10;
+// console.log(logg.substr(6, 2));
 
-// incr ++;
-// decr--; // также можно вначале ставить --, ++
+const num = 12.2;
 
-// console.log(++incr);
-// console.log(--decr);
+console.log(Math.round(num));
 
-//  console.log(2 + 2 * 2 !== '6');
-// console.log(3 + 3 === 6);
+const Num = "12.3px";
 
-// const isChecked = false,
-//       isClose = true;
-
-// console.log(isChecked && isClose); && - или
-// console.log(isChecked || isClose); // || - и
-// console.log(isClose || !isChecked); // ! - отрицание
-
-
- 
+console.log(parseInt(Num));
+console.log(parseFloat(Num));

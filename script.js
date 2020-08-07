@@ -1,178 +1,71 @@
-// перер
+let numberOfFilms;
 
+function start () {
+    numberOfFilms = +prompt('Сколько фильмов вы уже просмотрели?', '');
 
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt('Сколько фильмов вы уже просмотрели?', '');
+    }
+}
 
+start(); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  var number = 3.7;
-// var myNumber = 3;
-//  console.log(myNumber);
-//  var myString = 'facts'; // "121 string"
-//  var myBoolean = true; // false
-//  var myNull = null;
-//  var string = "Hello";
-// // Number
-// var result = 5+5;
-// alert();
-//  console.log(number + 43);
-//  console.log(555 - 43);
-//  console.log(number * 43);
-//  console.log(number * 43);
-//  console.log(number / 43);
-//  myNumber = myNumber + 45; // myNumber += 10;
-//  console.log(myNumber);
-//  myNumber++; // --
-//  console.log(myNumber);
-//  console.log(Math.round(12.343444)); //Math.round округление
-// console.log(Math.ceil(12.343444)); // Math.ceil округление в большую сторону
-// console.log(Math.floor(12.6768)); // Math.floor округление в меньшую сторону
-// var newNumber = 2.445;
-// console.log(newNumber.toFixed(1)); //toFixed чтобы сделать 1 знак после запятой
-
-// // string
-//  console.log(myNumber + '55'); // конкотенация
-//  console.log(myString + ' string');
-//  console.log(string.toLowerCase()); // нижний регистр
-//  console.log(string.toUpperCase());// верхний регистр
-
-//  // Masive - Массивы
-// var names = ["Alex", "Nikki", "Ivan", "David"]; // 0, 1, 2, 3,
-//  console.log(names[0].toUpperCase());
-//  names[0] = "BoBa";	// Присвоение в перременную
-//  console.log(names[0]);
-//  names.push("Света"); // Добавление к массиву команда .Push  
-//  console.log(names[4]);
-//  console.log(names); // Просмотр всего массива
-
-// // Условия
-//  if (10 <= 5) { // или меньше пяти или ровно <= 
-//  	console.log("sdfsd");
-//  }
-//  if (5 == 5) { // Равество ==
-//  	console.log("sdfsd");
-//  }
-//  if (5 === 5) { //Строгое Равество ===
-//  	console.log("sdfsd");
-//  }
-//  if ("Вася" != "Петя") { // Неравно !=
-//  	console.log("sdfsd");
-//  }
-//  if ("Вася" !== "Петя" || myNumber > 30) { // Строгое Неравно !== &&--И 
-//  	console.log("sdfsd"); // || - это или
-//  }
-//  else {
-//  	console.log("привет");
-//  }
-//  if (myNumber > 30) {
-// 	console.log("Number more");
-//  } else {
-//  	console.log("Number litle");
-//  }
-
-// ЦИКЛЫ
-//  for (var i = 0; i < 10; i ++) { // код будет выполнятся до того времени, пока не будет ложь.
-//  	if (i == 5) {
-//  		continue; // остонавливает нумерацию break
-//  	} // континью продолжает операцию 5 пропуститься
-//  	console.log(i);
-//  }
-// for (var j = 0; j < names.length; j++) {
-//  	console.log(names[j]);
-//  }
-//  var i = 0;
-//  while ( i < 10) {
-
-//  	console.log(i);
- 	
-	
-//  }
-
-// // ФУНКЦИИ
-
-//  function sum(x, y) {
-//  	return x + y;
-//  }
-//  console.log(sum(10, 59));
-//  console.log(sum(109, 759));
-
-// //Object
-
-// var myObject = {
-//  	name: "Bася",
-//  	surname: "Bасин",
-//  	age: 25,
-//  	getFullName: function() {
-//  		return this.name + " " + this.surname;
-//  	}
-
-//  };
-//  myObject.name = "Петя";
-// console.log(myObject.name);
-// console.log(myObject.getFullName());
-//"use strict"; //новый режим (код)
-
-
-// let number = 5;
-// 	const leftBorderWidht = 1;
-// 	number = number + 6;
-// 	console.log(number);
-// 	const obj = {
-// 		a: 50
-// 	};
-// 	obj.a = 10;
-// 	console.log(obj);
-// 	var name = 'Ivan';
-// 	name = 'Alex';
-// 	{
-// 		let result = 10
-// 	// console.log(result);
-// const cars = ['fsdfsd', 'fsfsfgsgg', 'gsggs', 'sgsg']
-// for (let i = 0; i < cars.length; i++) {
-// 	const car = cars[i]
-// 	console.log(car)
-
-
-
-
-const numberOfFilms = prompt('Сколько фильмов вы уже просмотрели?', '');
-
-let personalMovieDB = {
+const personalMovieDB = {
     count: numberOfFilms,
-    movie: {},
+    movies: {},
     actors: {},
-    generes: [],
+    genres: [],
     privat: false
 };
- const q1 = prompt('Один из последних просмотренных фильмов?', ''),
-       q2 = prompt('На сколько оцените его?', ''),
-       q3 = prompt('Один из последних просмотренных фильмов?', ''),
-       q4 = prompt('На сколько оцените его?', '');
 
-personalMovieDB.movie[q1] = q2;
-personalMovieDB.movie[q3] = q4;
 
-console.log(personalMovieDB);
+ 
+
+function rememberMyFilms () {
+    for (let i = 0; i < 2; i++) {
+        const a = prompt('Один из последних просмотренных фильмов?', ''),
+              b = prompt('На сколько оцените его?', '');
+    
+        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+            personalMovieDB.movies[a] = b;
+            console.log('done');
+        } else {
+            console.log('error');
+            i--;
+        } 
+    }
+}
+
+rememberMyFilms();
+
+
+
+function defectPersonalLevel() {
+    if (personalMovieDB.count < 10) {
+        console.log('Просмотрено довольно мало фильмов');
+    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+        console.log("Вы клласичекий зритель");
+    }else if (personalMovieDB.count >=30) {
+        console.log("Вы киноман");
+    } else {
+        console.log('Произошла ошибка');
+    }
+}
+
+defectPersonalLevel();
+
+function showMyDB (hidden) {
+    if (!hidden) {
+        console.log(personalMovieDB);
+    }
+}
+
+showMyDB(personalMovieDB.privat);
+
+function writeYourGenres() {
+    for (let i = 1; i <= 3; i++) {
+        personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`); 
+    }
+}
+ 
+writeYourGenres();
